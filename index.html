@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <meta name="google-site-verification" content="0b8cZwUonuHrANTiKBCslDhhRuzAzlDiaoq6uvxVXHI" />
+  <link rel="stylesheet" href="./css/tailwind.css">
+  <script src="https://kit.fontawesome.com/3b9e2cc044.js" crossorigin="anonymous"></script>
+  <link href='https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css' rel='stylesheet' type='text/css'>
+
+  <!--just checking-->
+  <title>Sigma-Dev | portfolio</title>
+<style>
+  @font-face {
+  font-family:ellams;
+  src: url(font1/AeonikTRIAL-Bold.otf);
+}
+body{
+  font-family: ellams;
+}
+</style>
+</head>
+
+<body class="bg-black">
+  <!-- Top bar -->
+  <div x-data="scrollProgress()" x-init="init()" x-cloak class="fixed inset-x-0 top-0 z-50">
+    <div class="h-2 bg-green" :style="`width: ${percent}%`"></div>
+  </div>
+
+  <!--NAV BAR-->
+
+  <nav id="home" class="flex items-center text-white  bg-darkwind p-3 flex-wrap">
+    <a href="#" class="p-2 mr-4 inline-flex items-center">
+
+      <span class="text-3xl lg:text-xl yup text-white font-bold uppercase tracking-wide">SIGMA-DEV</span>
+    </a>
+    <button
+      class="text-white inline-flex p-3 hover:bg-gray-900 rounded lg:hidden ml-auto hover:text-white outline-none nav-toggler"
+      data-target="#navigation">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd"
+          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+          clip-rule="evenodd" />
+      </svg>
+    </button>
+    <div class="hidden top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto" id="navigation">
+      <div
+        class="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto">
+        <a href="#home"
+          class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white">
+          <span>Home</span>
+        </a>
+        <a href="#about"
+          class="lg:inline-flex lg:w-auto w-full  px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white">
+          <span>About</span>
+        </a>
+        <a href="#skills"
+          class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white">
+          <span>Skills</span>
+        </a>
+        <a href="#work"
+          class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white">
+          <span>Works</span>
+        </a>
+
+        <a href="#contacts"
+          class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white">
+          <span>Contact</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!---END OF NAV-->
+
+  <!--FIRST PAGE-->
+  <div class="bg-darkwind lg:pt-6">
+    <div style="background-image:url('page/float.jpg') ;" class="tex md:bg-contain bg-center bg-cover ">
+      <p class="font-extra-bold lg:block hidden text-center   ">SIGMA</p>
+      <!--for small screen only-->
+      <div style="line-height: 90%;" class="lg:hidden font-bold text-center">
+        <span>SIG<span>
+            <span>MA<span>
+                <span>DEV<span>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!--ABOUT ME -->
+  <main id="about" class="bg-black grid lg:grid-cols-2  pt-6 text-white">
+
+    <div class="p-4">
+      <h1 class="text-1xl animate-pulse">ABOUT ME</h1>
+      <h1 class="text-right time text-xs animate-pulse"></h1>
+      <p class="pt-2 font-bold leading-tight  lg:text-5xl text-4xl ">I'm a front end developer.</p>
+      <p class="pt-2 reveal text-darkwhite">My name is Olaoluwa Emmanuel, i am a creative front end developer/web developer (Including 3D Visuals).
+        I am passionate about leveraging my diverse backgrounds to decipher challenging problems and create delightful
+        experiences.
+        I develop websites with HTML, CSS, JavaScript, React, WebGL, ThreeJS and tailwind.
+        I also hone intermediate skills in Command Line Interface, Git, Mercurial, Shell Scripting and other Programming Languages such as C, C++, C# and Python.
+      </p>
+
+      <div class="pt-6 ">
+        <details class="transition-a styled border-b-wind border-b-2 mb-3">
+          Creating the highest efficiency, to handle presentational changes through
+          CSS updates and behavior through JavaScript / react updates. Writing HTML,
+          design-agnostic as it should be, as a front end developer i want to solve peoples
+          problems and real world problem making life easier for the everyday man through codes.
+          <summary class="pb-2 text-lg">My Vision</summary>
+
+        </details>
+
+
+        <details class="transition-a  styled border-b-wind border-b-2 mb-3 lg:mt-5">
+          my mission is to ensure the best relationship with our clients,
+          both during and after their goals have been met
+          and create a web site that is suitable for their needs.
+
+          <summary class="pb-2 text-lg">My Mission</summary>
+
+        </details>
+        <details class="transition-a  styled border-b-wind border-b-2 mb-3 lg:mt-5">
+
+          The main objective when working as a developer is to be productive and deliver
+          value to the company and solve problems. As a front end developer , the aim is to build practical
+          applications/web that will be 100% successful.
+
+          <summary class="pb-2 text-lg">My Goal</summary>
+
+        </details>
+      </div>
+    </div>
+
+
+    <div class="heroImg" style="background-image:url('page/Oasis-Standards-Header-Image.webp') ;
+    " class="w-full lg:w-full pl-3 lg:h-20 h-16 object-none  bg-center ">
+      <div class="border-b-2 ml-3 reveal lg:mt-20  mr-3 mt-18 p-4 border-l-2 border-b-white">
+        <p class="text-7xl font-extrabold ">1+</p>
+        <p class="text-2xl ">Year of experience</p>
+      </div>
+    </div>
+  </main>
+
+  <!--EXPERIENCE SECTION-->
+  <div class="bg-black md:pt-18 pt-6 lg:pt-18 grid lg:grid-cols-2 md:grid-cols-2 text-white p-4">
+
+    <div id="skills" class="">
+      <h1 class="text-1xl font-bold animate-pulse">MY EXPERIENCE</h1>
+      <p class="pt-2 text-4xl lg:text-5xl font-semibold leading-tight reveal">MY EXPERIENCE</p>
+    </div>
+
+    <div class="pt-3 pl-4 text-darkwhite border-l-wind border-l-2 mt-2">
+      As a developer i design and also tweak fonts sizes and contemplating patterns and layouts.<br>
+
+      Being a diligent, hardworking and result oriented person, I always work towards achieving
+      best result on each project I lay my hands on.
+    </div>
+
+  </div>
+  <div class="text-white pt-6 md:grid-cols-2 grid lg:grid-cols-3 gap-3 p-4">
+    <div class="border-wind p-5 hov reveal border-2">
+      <p class="font-bold">January 2023 - Present</p>
+      <p class="pt-3 text-3xl font-bold">Web Developer <br/> (Freelance)</p>
+      <p class="pt-3 text-darkwhite">
+        <ul style="list-style-type:disc;">
+          <li>Developing and maintaining web applications using React.js and other related technologies.</li>
+          <li>Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.</li>
+          <li>Implementing responsive design and ensuring cross-browser compatibility.</li>
+          <li>Participating in code reviews and providing constructive feedback to other developers.</li>
+        </ul>
+      </p>
+      <p class="pt-4"><img class="" src="page/tools-svgrepo-com (2).svg"></p>
+
+    </div>
+    <div class="border-wind hov reveal p-5 border-2">
+      <p class="font-bold">January 2023 - May 2023</p>
+      <p class="pt-3 text-3xl font-bold">ALX (Student)</p>
+      <p class="pt-3 text-darkwhite"> 
+        <ul style="list-style-type:disc;">
+          <li>Engaged with Languages such as C and Python.</li>
+          <li>Collaborating with cross-functional teams to create high-quality products.</li>
+          <li>Engaged with Linux Command Line, Shell Navigation and GIT from the terminal</li>
+          <li>Participating in code reviews and providing constructive feedback to other developers.</li>
+        </ul>
+      </p>
+      <p class="pt-4"><img class="" src="page/tools-2-svgrepo-com.svg"></p>
+    </div>
+    <div class="border-wind hov p-5 reveal border-2">
+      <p class="font-bold ">Jan 2022 - December 2022</p>
+      <p class="pt-3 text-3xl font-bold">FreeCode Camp (Student)</p>
+      <p class="pt-3 text-darkwhite">
+        <ul style="list-style-type:disc;">
+          <li>Developing and maintaining web applications using React.js and other related technologies.</li>
+          <li>Collaborating with cross-functional teams to create high-quality products.</li>
+          <li>I find solutions to a problem, and applying best practices to achieve a desired result</li>
+          <li>Participating in code reviews and providing constructive feedback to other developers.</li>
+        </ul>
+      </p>
+      <p class="pt-4"><img class="" src="page/blog-svgrepo-com.svg"></p>
+    </div>
+  </div>
+
+  <div class="p-4 font-bold grid lg:grid-cols-2 md:grid-cols-2 md:gap-6 lg:gap-6 text-white pt-6">
+    <div>
+      <p class="border-b-wind border-b-2 mb-4 h-5 reveal">Tailwind</p>
+      <p class="border-b-wind border-b-2 h-5 mb-4 ">Css</p>
+      <p class="border-b-wind border-b-2 h-5 mb-4 ">Git/Mercurial</p>
+      <p class="border-b-wind border-b-2 h-5 mb-4 ">ThreeJS</p>
+    </div>
+    <div>
+      <p class="border-b-wind border-b-2 h-5 mb-4 ">Python</p>
+      <p class="border-b-wind border-b-2 h-5 mb-4 ">Html</p>
+      <p class="border-b-wind border-b-2 h-5 mb-4 ">C/C++/C#</p>
+      <p class="border-b-wind border-b-2  h-5 reveal">Javascript /React</p>
+    </div>
+  </div>
+
+  <!--MY WORKS-->
+  <div class="bg-black md:pt-18 pt-6 lg:pt-18 grid lg:grid-cols-2 md:grid-cols-2 text-white p-4">
+
+    <div id="work" class="">
+      <h1 class="text-1xl font-bold animate-pulse">MY WORK</h1>
+      <p class="pt-2 text-4xl font-semibold lg:text-5xl leading-tight"> Projects i've <br>worked on.</p>
+    </div>
+
+    <div class="pt-3 pl-4 border-l-wind border-l-2 text-darkwhite mt-2">
+      <p>
+        Over the span of few months i've worked <br>
+        on some projects, using javascript, React js and ThreeJS to build webapps with tailwind and css.
+      </p>
+    </div>
+  </div>
+
+  <!--my works slider-->
+
+
+  <section class=" p-5  ">
+
+    <div x-data="{swiper: null}" x-init="swiper = new Swiper($refs.container, {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+  
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 0,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 0,
+        },
+      },
+    })" class="relative mx-auto flex flex-row">
+      <div class="absolute inset-y-0 left-0 z-10 flex items-center">
+        <button @click="swiper.slidePrev()"
+          class="bg-white -ml-2 lg:-ml-4 flex justify-center items-center w-10  rounded-full shadow focus:outline-none">
+          <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-left w-6 h-6">
+            <path fill-rule="evenodd"
+              d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="swiper-container " x-ref="container">
+        <div class="swiper-wrapper  ">
+
+          <!-- Slides -->
+
+          <div class="swiper-slide   bg-contain ">
+            <div class="flex flex-col rounded shadow overflow-hidden">
+              <div class="flex-shrink-0 h-48">
+                <img class="h-8" src="page/portfoliov2.png">
+                <p class=" text-white  text-center   ">PORTFOLIO V2 (3D VISUALS) BEST ON PC </p>
+                <p class="border-2 animate-bounce border-wind text-white hover:bg-darkwind text-center"><a
+                    href="https://portfolio-git-main-olaoluwaidowu166-gmailcom.vercel.app/"> live site</a></p>
+
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="swiper-slide bg-contain ">
+            <div class="flex flex-col rounded shadow overflow-hidden">
+              <div class="flex-shrink-0">
+                <img class="h-8" src="page/maverick.png" alt="">
+                <p class=" text-white  text-center  ">MAVERICK CITY</p>
+                <p class="border-2 animate-bounce border-wind text-white
+             hover:bg-darkwind text-center bottom-0 "><a href="https://emmanuel0846.github.io/mavericks/"> live site</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+        
+          
+          <div class="swiper-slide  ">
+            <div class="flex flex-col rounded shadow overflow-hidden">
+              <div class="flex-shrink-0">
+                <img class="h-8 object-contain " src="page/photograph.png" alt="">
+                <p class=" text-white  text-center  ">ENNY PHOTOGRAPHY</p>
+                <p class="border-2 animate-bounce border-wind text-white
+             hover:bg-darkwind text-center bottom-0 "><a href="https://emmanuel0846.github.io/photograph">live site</a> </p>
+
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="swiper-slide  ">
+            <div class="flex flex-col rounded shadow overflow-hidden">
+              <div class="flex-shrink-0">
+                <img class="h-8 object-contain " src="page/moviecard.png" alt="">
+                <p class=" text-white  text-center  ">MOVIE CARD API</p>
+                <p class="border-2 animate-bounce border-wind text-white
+             hover:bg-darkwind text-center bottom-0 "><a href="https://emmanuel0846.github.io/moviecard-react/">live site</a> </p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide  ">
+            <div class="flex flex-col rounded shadow overflow-hidden">
+              <div class="flex-shrink-0">
+                <img class="h-8 object-contain " src="page/restaurant.png" alt="">
+                <p class=" text-white  text-center  ">DADEL RESTAURANT</p>
+                <p class="border-2 animate-bounce border-wind text-white
+             hover:bg-darkwind text-center bottom-0 "><a href="https://emmanuel0846.github.io/dadel-restaurant/">live site</a> </p>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="swiper-slide  ">
+            <div class="flex flex-col rounded shadow overflow-hidden">
+              <div class="flex-shrink-0">
+                <img class="h-8 object-contain " src="page/rock-paper-scissors.png" alt="">
+                <p class=" text-white  text-center  ">ROCK-PAPER-SCISSORCS </p>
+                <p class="border-2 animate-bounce border-wind text-white
+             hover:bg-darkwind text-center bottom-0 "><a href="https://emmanuel0846.github.io/rock-paper-scissors/">live site</a> </p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide  ">
+            <div class="flex flex-col rounded shadow overflow-hidden">
+              <div class="flex-shrink-0">
+                <img alt="nifemi-folio object-contain bg-center" class="h-8" src="page/youtube.png" alt="">
+                <p class=" text-white  text-center  ">YOUTUBE CLONE</p>
+                <p class="border-2 animate-bounce border-wind text-white
+             hover:bg-darkwind text-center bottom-0 "><a href="https://emmanuel0846.github.io/sigma-website/youtube.html">live site</a> </p>
+
+              </div>
+            </div>
+          </div>
+
+       
+
+          <div class="swiper-slide   bg-contain ">
+            <div class="flex flex-col rounded shadow overflow-hidden">
+              <div class="flex-shrink-0 h-48">
+                <img class="h-8" src="page/calculator-removebg-preview.png">
+                <p class=" text-white  text-center   ">CALCULATOR APP</p>
+                <p class="border-2 animate-bounce border-wind text-white hover:bg-darkwind text-center"><a
+                    href="https://emmanuel0846.github.io/calculator/"> live site</a></p>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="swiper-slide   bg-contain ">
+            <div class="flex flex-col rounded shadow overflow-hidden">
+              <div class="flex-shrink-0 h-48">
+                <img class="h-8" src="page/review.png">
+                <p class=" text-white  text-center   ">REVIEW APP</p>
+                <p class="border-2 animate-bounce border-wind text-white hover:bg-darkwind text-center"><a
+                    href="https://emmanuel0846.github.io/review/"> live site</a></p>
+
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+
+      <div class="absolute inset-y-0 right-0 z-10 flex items-center">
+        <button @click="swiper.slideNext()"
+          class="bg-white -mr-2 lg:-mr-4 flex justify-center items-center w-10  rounded-full shadow focus:outline-none">
+          <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-right w-6 h-6">
+            <path fill-rule="evenodd"
+              d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!--End of slider-->
+
+  </section>
+
+
+
+  <section class="bg-black md:pt-18 lg:pt-18 grid lg:grid-cols-2 md:grid-cols-2 text-white p-4">
+
+    <div class="md:order-last ">
+      <div id="work" class="">
+        <h1 class="text-1xl font-bold animate-pulse ">BEST FREELANCERS</h1>
+        <p class="pt-2 text-4xl font-semibold lg:text-5xl leading-tight">SIGMA DEV</p>
+      </div>
+
+      <div class="p-5 mt-3 reveal border-l-wind border-l-2 text-darkwhite ">
+        Got a question, proposal or projects or want to work together on something?
+        feel free to reach out.
+        <div class="leading-8 pt-4">
+          <a class="animate-pulse" href="tel:+2348093176796"> CONTACT ME <br/>sigmadev@gmail.com <br/> +234 903 9261 317</a>
+
+        </div>
+      </div>
+    </div>
+
+    <div class=" ">
+      <img class="md:h-20 h-20 object-none rounded-md reveal  md:object-fill  bg-center"
+        src="page/logo-no-background.png">
+
+    </div>
+
+
+
+  </section>
+  <div class="grid gap-4 mt-5 p-3 grid-cols-4">
+    <img class="w-auto" src="page/envato-market-api-2(1).svg">
+    <img src="page/codecademy.svg">
+    <img src="page/envato-market-api-2(1).svg">
+    <img src="page/codecademy.svg">
+  </div>
+  <!--CONTACTS CONTAINER-->
+
+  <div
+    class="grid lg:grid-cols-3 md:grid-cols-3 p-4 border-wind borderl-2 border-t-2 text-center justify-center text-white">
+
+    <!-- first div-->
+    <div id="contacts" class=" lg:block  pt-6 md:block hidden text-white">
+      <span class="p-6"><a href="#home">Home</a></span>
+      <span><a href="#about">About</a></span>
+    </div>
+
+    <!-- second div-->
+    <div class=" p-4 md:pb-3 lg:pb-3">
+      <p class="text-4xl font-bold pt-5"><img style="height: 80px; margin: auto auto;" 
+        src="page/logo-no-background.png" />
+      </p>
+      <i class="text-darkwhite">"Don't Wait for Opportunity, Create it."
+      </i>
+      <div class="text-white md:gap-6 md:pr pt-6 grid grid-cols-4 justify-center">
+        <span class="btn2   "><a href="https://twitter.com/iam_OEmmanuel"><i
+              class="fa-brands w-5 h-6 fa-twitter"></i></a></span>
+        <span class=" btn2 "><a href="https://github.com/Emmanuel0846"><i class="fa-brands w-5 h-6 fa-github"></i></a></span>
+        <span class="btn2"><a href="https://www.linkedin.com/in/olaoluwa-emmanuel"><i
+              class="fa-brands  w-5 h-6 fa-linkedin"></i></a></span>
+        <span class="btn2  "><a href="mailto:sigmadev@gmail.com? subject=subject text"><i
+              class="fa-solid w-5 h-6 fa-envelope-circle-check "></i></a></span>
+      </div>
+
+    </div>
+
+    <!-- third div-->
+    <div class=" lg:block pt-6 md: md:block hidden text-white">
+      <span class="p-5"><a href="#work">Works</a></span>
+      <span><a href="#contacts">Contacts</a></span>
+    </div>
+    <div class="grid p-4 gap-2 grid-cols-4 md:hidden lg:hidden">
+      <span><a href="#home">Home</a></span>
+      <span><a href="#about">About</a></span>
+      <span><a href="#contacts">Contacts</a></span>
+      <span><a href="#work">Works</a></span>
+
+    </div>
+    <!--end of div-->
+  </div>
+  <!--end of  CONTACTS CONTAINER-->
+
+  <!--FOOTER-->
+
+  <footer class="text-white text-center border-b-2 border-t-2 border-darkwind p-4">
+    <p>Copyright © 2022 SIGMA-DEV</p>
+  </footer>
+
+  <div class="fixed p-3 text-white bottom-0 right-0">
+    <a href="#home" class="text-blue-500 text-4xl"><i class="fas fa-arrow-alt-circle-up"></i></a>
+  </div>
+
+  <div x-data="scrollProgress()" x-init="init()" x-cloak
+    class="fixed inline-flex items-center  justify-center overflow-hidden rounded-full bottom-3 left-0">
+
+    <!-- Building a Progress Ring: https://css-tricks.com/building-progress-ring-quickly/ -->
+    <svg class="w-6 h-6 transform -rotate-90">
+      <circle class="text-red" stroke-width="5" stroke="bg-red" fill="transparent" r="32" cx="20" cy="30" />
+      <circle class="text-green " stroke-width="3" :stroke-dasharray="circumference"
+        :stroke-dashoffset="circumference - percent / 100 * circumference" stroke-linecap="round" stroke="currentColor"
+        fill="transparent" r="20" cx="25" cy="25" />
+    </svg>
+    <span class="absolute text-xl text-white" x-text="`${percent}%`"></span>
+  </div>
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script src="index.js"></script>
+  <script>
+
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
+  <script>
+
+  </script>
+  <script defer src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+
+  <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+</body>
+
+</html>
