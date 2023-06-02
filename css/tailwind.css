@@ -36,8 +36,6 @@ html {
   line-height: 1.5;
   /* 1 */
   -webkit-text-size-adjust: 100%;
-  /* 2 */
-  -moz-tab-size: 4;
   /* 3 */
   -o-tab-size: 4;
      tab-size: 4;
@@ -78,7 +76,6 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 */
 
 abbr:where([title]) {
-  -webkit-text-decoration: underline dotted;
           text-decoration: underline dotted;
 }
 
@@ -393,8 +390,6 @@ iframe,
 embed,
 object {
   display: block;
-  /* 1 */
-  vertical-align: middle;
   /* 2 */
 }
 
@@ -1214,6 +1209,12 @@ details.styled summary{
 
   .md\:pb-3 {
     padding-bottom: 16px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .sm\:hidden {
+    display: none;
   }
 }
 
